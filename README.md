@@ -1,6 +1,6 @@
 # Capstone-Project
 
-![] (https://datamarte.com/wp-content/uploads/2021/06/giphy-1.gif)
+![Data](https://datamarte.com/wp-content/uploads/2021/06/giphy-1.gif)
 
 ## About Olist's
 Olist is for everyone "who wants to sell more and better" and "who wants to attract new customers". As a business in the e-commerce sector, Olist is an online selling platform for small businesses. On Olist's sign-up page a range of shopkeeper profiles is listed which fits the business model. A strong focus is on attracting more customers through a larger market presence. A user satisfaction report helps to address areas of attention. Olist therefore acts as a service provider which is managing the sales process for the shopkeepers. Olist doen't own any of the offered products and is also not managing shipping or inventory.
