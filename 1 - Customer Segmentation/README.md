@@ -175,3 +175,88 @@ Above chart shows the average purchase value distribution, averaged over zip cod
 - Some level of clustering in view of higher- and lower total reveny can be seen. This might for a big part be the effect of the group sizes. Geographical clusters of high revenue are "Campinas" and the south east of Rio de Janeiro.
 - There seem to be a slightly higher general purchase price in the north of Brazil when looking at the level of individual customers. A statistical test to validate this statement would need to be performed before basing any decisions on this.
 
+# Part II
+
+# RFM Analysis
+## Strategy to target specific customer segments
+The RFM analysis is another way to segment customers in order to develop marketing strategies. The three used metrics Recency, Frequency amd Monetary lead to a combined individual classification. With this classification also an appropriate proposed marketing strategy will be developed. The number of the sub-segments which is created in this process is arbitrary and might not be in line with an underlying clustering as it appears in the data. To address this, also K-Means Clustering is applied to extract clusters from non-labeled data. The features used as inputs are the same as used for the RFM analysis.
+
+## Recency
+Recency is the time duration from the last order to the reference date (last order date in data set in our case).
+
+![Dataset](Recency.png)
+
+This chart makes sense because we see that there is the spike at round about 270 days before the reference day. That falls in the time period of the heavy Black Friday sales event where a lot of customers placed their latest order.
+
+
+![Dataset](Frequency.png)
+
+This is in line with what we have seen in the order profile analysis. There are many customers which only placed one order. Monetary
+
+Monetary is basically the cumulated purchase amount a customer as spent.
+
+![Dataset](Monetary.png)
+
+As also seen in the "Market Trend Analysis", most of the purchases are on the low side (under 100) of the distribution.
+
+In step one of the RFM segment process each of the labels Recency, Frequency and Monetary is individually calculated per customer. In step two, two metrics are developed:
+
+1. RFM score: A calculated value with is the product of the three scores (R-score * F-score * M-score)
+2. RFM segment label: A number code with is created by combining the three scoces in a row (R-scoreF-scoreM-score) In step three filter conditions based on the two metrics for customer types are defined. The segmentation process in this analysis is dealing with 7 customer types:
+
+- Best Customer
+- Big Spender
+- Loyalist
+- Potential Loyalist
+- Hibernating
+- Almost Lost
+- Lost Customer
+
+![Dataset](Waffle_RFM.png)
+
+Based on the observed customer behaviour the appropriate marketing strategy added to a summarized list.
+
+RFM Segment | Count |	Recency |	Frequency	Monetary |	Marketing Strategy |
+----------- | ----- | ------- | ------------------ | ------------------- |
+Best customer |	6,552 |	66.6 | 1.2 | 356.4	Personalized communication, offer loyalty program, no promotional offers needed |
+Big Spender	| 5,715 |	172.9 |	1.1 |	346.3 |	Make them feel valued and offer quality products, encourage to stick with brands |
+Loyalist	| 1,132 |	290.9 |	2.1 |	173.4 |	Offer loyalty program |
+Potential Loyalists	| 51,001 | 184.2 |	1.0 |	136.7 |	Recommend products and offer discounts |
+Hibernating |	5,803 |	446.5 |	1.0 |	64.8 |	Make great offers with big discounts |
+Almost Lost |	11,581 |	360.9 |	1.0 |	88.8 |	Try to win them with limited sales promotions |
+Lost Customer	| 11,574 |	367.6 |	1.0 |	29.0 |	Do not spent much effort and money to win them |
+
+### Conclusion: Strategy to target specific customer segments
+
+- The order frequency and order amounts are concentrated on the lower end. This is what we have repeatedly have seen before.
+- The biggest RFM segment is the group of Potential Loyalists. These are customers that need to be targeted with offers and discounts in order to make the business successful. If Olist manages to do a good job by winning the majority of this sub-segment it would make a big impact in growth.
+- There is a good base of Best Customers, which is good news for the business.
+- Some effort needs to be spent to target hibernating customers and customers which are almost lost
+
+# K-Means Clustering
+
+##Evaluation of the applied RFM segmentation by comparison with ML clustering method
+
+K-Means Clustering is a method that supports identifying clusters in unlabeled data. Sklearns K-means algorithm is applied to find underlying segments that are different from the aribrarily chosen RFM classes. This will provide a different angle of view and confidence level on the above performed segmentation.
+
+Before the data is processed a scatter plot often helps to identify custering in a visual way already beforehand. The current analysis is dealing with three features which can still be visualized in a 3D scatter plot.
+
+![Dataset](RFM_scatter_3d.png)
+![Dataset](RFM_scatter_3d_2.png)
+
+The above scatter plot shows a zoomed view in order to get a clearer picture without the outliers. Obviously, the major segmentation factor in this plot is generated by the purchase frequency. Apart from this and the small cluster of very early customers (in the range of 700 days Recency), there is not a clear segmentation to observe.
+
+The SSE (Sum of Squared Errors) in K-Means Clustering is depending on the number of selected clusters. The goal is to select a number of clusters that is as small as possible, but one that still archives a significant improvemet if fitting the data. The process is known as "Elbow Method".
+
+A range of 1 to 10 clusters is used to calculate the resulting SSE.
+
+![Dataset](Elbow_method.png)
+
+The chart shows that a cluster number of 4 is a good choice. When K-Means is applied for 4 clusters we can see where the borders were defined. The summary table and the pie charts below visualize the new clustering.
+
+K-Means Cluster	Recency	Frequency	Monetary	Count	Customer Description
+0	127.8	1.0	113.4	50,832	New Low-Spenders
+1	219.9	2.1	243.2	2,774	Loyalists
+2	387.2	1.0	114.1	37,566	Hibernating Low-Spenders
+3	237.1	1.0	1142.7	2,186	Big Spenders
+
