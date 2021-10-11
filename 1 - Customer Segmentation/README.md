@@ -1,6 +1,6 @@
 # Olist Customer Segmentation .
 ### Analysing of the E-Commerce company Olist dataset
-![Python](https://files.realpython.com/media/wxPython-GUI-Tutorial_Watermarked.917be5fbbf2c.jpg)
+![Python](https://www.crossengage.io/wp-content/uploads/2017/10/building-segments-1080x627.png)
 
 ## Business Understanding of Olist E-Commerce
 This dataset was generously provided by Olist, the largest department store in Brazilian marketplaces. Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. See more on Olist's website: www.olist.com
