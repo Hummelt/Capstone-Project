@@ -41,7 +41,7 @@ The data is divided in multiple datasets for better understanding and organizati
 ![Dataset](https://i.imgur.com/HRhd2Y0.png)
 
 There is also a prepared dataset (df_orders_consolidated.csv) available as an output of the initial Olist E-commerce Data Analysis:
-![Dataset](Olist-Analysis_1_New_tables.png)
+![Dataset](../pics/Olist-Analysis_1_New_tables.png)
 
 For the current analysis following data files are used:
 
