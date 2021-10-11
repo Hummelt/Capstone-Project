@@ -1,4 +1,4 @@
-# Olist Customer Segmentation .
+# Olist Customer Segmentation 
 ### Analysing of the E-Commerce company Olist dataset
 ![Python](https://www.crossengage.io/wp-content/uploads/2017/10/building-segments-1080x627.png)
 
