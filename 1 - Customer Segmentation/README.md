@@ -254,9 +254,58 @@ A range of 1 to 10 clusters is used to calculate the resulting SSE.
 
 The chart shows that a cluster number of 4 is a good choice. When K-Means is applied for 4 clusters we can see where the borders were defined. The summary table and the pie charts below visualize the new clustering.
 
-K-Means Cluster	Recency	Frequency	Monetary	Count	Customer Description
-0	127.8	1.0	113.4	50,832	New Low-Spenders
-1	219.9	2.1	243.2	2,774	Loyalists
-2	387.2	1.0	114.1	37,566	Hibernating Low-Spenders
-3	237.1	1.0	1142.7	2,186	Big Spenders
+K-Means |  Cluster |	Recency |	Frequency |	Monetary |	Count |	Customer | Description |
+----- | -------- | -------- | --------- | -------- | ------- | -------- | ---------- |
+0 |	127.8 |	1.0 |	113.4 |	50,832 |	New Low-Spenders |
+1 |	219.9 |	2.1 |	243.2 |	2,774 |	Loyalists |
+2 |	387.2 |	1.0 |	114.1 |	37,566 |	Hibernating Low-Spenders |
+3 |	237.1 |	1.0 |	1142.7 |	2,186 |	Big Spenders |
+
+![Dataset](K_means_customers.png)
+![Dataset](K_means_revenue.png)
+![Dataset](K_means_recency.png)
+
+The Big Spenders are a small portion of the customers, but the revenue impact is very high. It is essential to make these customers feel valued. Encourage them to stick with their brands. New Low Spenders are the biggest group but show a relatively small revenue. For the growth of the business it is important to spend great effort in these customers in order to turn them into Loyalists or Big Spenders.
+
+The relation of these clusters to each other can be visualized in the 3D scatter plot.
+
+![Dataset](KMeans_scatter_3d.png)
+![Dataset](KMeans_scatter_3d_zoom.png)
+
+It now would be interesting to see if there is a geological relationship for these new classes.
+
+![Dataset](Geo_kmeans_customers.png)
+
+There is no general tendency to observe when looking at Brazil in total. Taking a closer look at the major cities reveals local clustering.
+
+![Dataset](Geo_kmeans_zoom.png)
+
+The color coding shows that a big portion of Sao Paulo's neighbohoods are Hibernating Low-Spenders. Compared to this, it appears that Rio de Janeiro has more New Low-Spenders. There is no clearly visible concentration of the important segment Big Spenders to see when scanning over Brazil.
+
+
+# Conclusion
+
+## Demographic relationship between customers
+
+The shared message between the different segmentation methods is that there is a small group of high spending customers that is essential to maintain as it is representing a significant portion of the revenue, and a relatively large group of customers which have the potential to impact Olist's future business. A very small segment can be called "Loyalists" based on multiple orders placed.
+
+Order frequency in this order dataset is in general low with a high concentration in just above one order placed. Based on this, the definition of "inactive" is a very sensitive metric which can swing quickly based on where thresholds are set. The customer segmentation and the RMF in the initial part of the analysis did not work with normalized data and show a smaller portion of "inactive", "hibernating" and "lost" customers. K-Menas Clustering worked with normalized data and came up with only 4 customer clusters, in which "Hibernating Low-Spenders" are 40% of all customers.
+
+## Geographic relationship in view of customer characteristics
+
+There is a big imbalance in regards to where the customers live. Most of the customers live in Sau Paulo by a big margin. This must have an impact for statistical validations and also for decisions which target business development.
+
+The geological distribution of the defined RFM segments across Brazil appears random. The K-Means segments on the other hand indicate some local clustering which could further be validated with statistical methods. In this view, big parts of Sao Paulo show "Hibernating Low-Spenders" while bigger portions of Rio de Janeiro show "New Low-Spenders". In terms of cumulated revenue there is also some local clustering to observe. The south-east of Rio de Janeiro and "Campinas" show a greater density of higher cumulated revenue. It is likely that this is impacetd by residential density which is confirmed when looking at individual total value. The colors which indicate average individual purchase value in the map show that there could be a tendency that northern parts of Brazil spend more on their purchase. Also this observation needs to be statistically validated.
+
+## Strategy to target specific customer segments
+
+Along with the segmentation of customers a table with marketing strategies is available. The recommendations in this table also need to be seen in the light of the segment's importance for the business. As mentionioned above, "High Spenders" and the big group of "Potential Loyalists" (or "New Low-Spenders") have a high importance. Their marketing strategy has therefore a higher priority.
+
+## What are the conclusions for the logistic process?
+
+As seen in the initial Olist Business Trend Analysis, shipping time is varying and has some correlation with product cost. While the correlation between shipping duration and customer satisfaction is still to be investigated, it can be concluded from the above geodemographis analysis that some areas have a higher relevance. When including direct shipping vs. drop shippment in the business development planning, we can think about micro fullfillment facilities close to dense areas. These facilities would be part of a hybrid concept in which the "hot" product groups Health & Beauty, Gift Watches and Information Accessories (compare to Business Trend Analysis) would be logistically incorporated to archive an effective supply chain for the very important High Spenders and Loyalist segment. The small product size of this product group allows to maintain a small facility footprint which helps to facilitate the warehouse process and to keep the investment cost low. A bigger portion of this hybrid business would still be executed via drop ship as it operates today. This helps to serve a the large group of Potential Loyalists (or New Low-Spenders) more effectively.
+
+## Next steps
+
+The analysis in this part of the project is a reflection of how consumers react to what and how Olist is offering. After seeing the customer behaviour, along with some demographic and geodemographic background, it is now important to also understand which improvements would enhance satisfaction and increase consumer attraction. This is one of the key objectives of the business case analysis and would be the logical next step. The objective can be archived by analyzing data from the customer satisfaction report, and also finding a way to recommend products in an effective way.
 
