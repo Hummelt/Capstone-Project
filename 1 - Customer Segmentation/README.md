@@ -216,9 +216,9 @@ In step one of the RFM segment process each of the labels Recency, Frequency and
 
 Based on the observed customer behaviour the appropriate marketing strategy added to a summarized list.
 
-RFM Segment | Count |	Recency |	Frequency	Monetary |	Marketing Strategy |
------------ | ----- | ------- | ------------------ | ------------------- |
-Best customer |	6,552 |	66.6 | 1.2 | 356.4	Personalized communication, offer loyalty program, no promotional offers needed |
+RFM Segment | Count |	Recency |	Frequency |	Monetary |	Marketing Strategy |
+----------- | ----- | ------- | --------- | -------- | ------------------- |
+Best customer |	6,552 |	66.6 | 1.2 | 356.4 | Personalized communication, offer loyalty program, no promotional offers needed |
 Big Spender	| 5,715 |	172.9 |	1.1 |	346.3 |	Make them feel valued and offer quality products, encourage to stick with brands |
 Loyalist	| 1,132 |	290.9 |	2.1 |	173.4 |	Offer loyalty program |
 Potential Loyalists	| 51,001 | 184.2 |	1.0 |	136.7 |	Recommend products and offer discounts |
