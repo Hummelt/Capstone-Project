@@ -90,18 +90,18 @@ Many new cutomers appeared on Black Friday! It is interesting to see that the im
 
 ## Demographic relationship between customers
 
-The segmentation will classify customers based on thre metrics:
+The segmentation will classify customers based on the metrics:
 
 - Date since last order was placed (Recency)
 - Total money spent
-- 
+
 The Recency segments are defined by dividing the total time period (oldest order to the newest order) in four periods. In that way we get the following classes:
 
 - Inactive
 - Cold
 - Hot
 - Active
-- 
+
 In a second step the total purchase amount of a customer was sorted to either, higher than the median total purchase amount or lower. Doing so produces two classes:
 
 - Low
@@ -115,7 +115,7 @@ The two classes were combined for each customer to a sub-segment. The disctibuti
 
 ### Conclusion: Demographic relationship between customers
 
-- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the business.
+- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the Olist's business.
 - Active customers with high and low spending placed the most orders, followed by "hot" customers.
 - Active customers are also the biggest groups in terms of head count.
 - Inactive customers represent in each chart the smallest proportion.
