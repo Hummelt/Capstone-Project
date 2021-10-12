@@ -12,15 +12,15 @@ For the decision making process in business development in general, and potentia
 
 ## Objectives
 
-The analysis in this repository is looking into the customer's buying behaviour as well as their locations. Three different approaches to segment customers is presented: Customer Segmentation, RFM Analysis and K-Means Clustering. By doing so a few quesions will be answered:
+This analysis is taking a look into the buying behaviour and the location of Olist's customers. Three different approaches to segment customers is presented: customer segmentation, RFM Analysis and K-Means clustering. The following points will be answered:
 
-- Demographic relationship between customers
+- Demographic relationship between Olist's customers
 
-- Geographic relationship in view of customer characteristics
+- Geographic relationship in view of Olist's customer characteristics
 
-- Strategy to target specific customer segments
+- A Strategy to target specific customer segments
 
-- What are the conclusions for the logistic process?
+- And a conclusions derived for the logistic perspective 
 
 ## libraries:
 
@@ -40,10 +40,10 @@ The data is divided in multiple datasets for better understanding and organizati
 
 ![Dataset](https://i.imgur.com/HRhd2Y0.png)
 
-There is also a prepared dataset (df_orders_consolidated.csv) available as an output of the initial Olist E-commerce Data Analysis:
+There is also a prepared dataset (df_orders_consolidated.csv) available as an output of a previous analysis of Olist's business:
 ![Dataset](pics/Olist-Analysis_1_New_tables.png)
 
-For the current analysis following data files are used:
+The following data files are used:
 
 - df_orders_consolidated.csv
 - olist_customers_dataset.csv
@@ -51,7 +51,7 @@ For the current analysis following data files are used:
 
 ## Prepare Data
 
-The following steps have been processed in this analysis:
+Steps that have been processed in this analysis:
 
 - Understanding the dataset
 - Checking for missing values 
@@ -62,25 +62,25 @@ The following steps have been processed in this analysis:
 
 ## Exploratory Data Analysis
 
-*Goal*: The focus is on getting an understanding about the customer's buying habits and their locations.
+The main goal is to get an understanding about the buying habits of Olist's customers and their location.
 
-Where are the customers from?
+So, where are the customers from?
 
-Customers live in 4,119 unique cities in 27 unique states.
+Olist's customers live in 4,119 (unique) cities in 27 (unique) states.
 
 ![Dataset](pics/Top_50_cities.png)
 
 ![Dataset](pics/Top_states.png)
 
-The imbalanced distribution accross cities and states need to be kept in mind when drawing conclusions of statistical nature.
+The distribution accross cities and states is imbalanced and need to be kept in mind when drawing conclusions.
 
 ![Dataset](pics/Top_50_zip_codes.png)
 
-There are 14,994 unique zip code prefixes.
+There are 14,994 (unique) zip code prefixes.
 
-*When did customers join?*
+So when did Olist's customers join?
 
-The date of the first order is assumed to be the user sign-up date.
+We assume the sign-up date of a user to be the first time of an order.
 
 ![Dataset](pics/New_customers_daily.png)
 
@@ -158,7 +158,7 @@ A big majority of neighborhoods is on the low end of the distribution when looki
 
 The following visualization shows the distribution on an individual level, independent from the zize of a neighborhood.
 
-![Dataset](../pics/Geo_avgpurch_50_300.png)
+![Dataset](pics/Geo_avgpurch_50_300.png)
 
 By adjusting the lower- and uppder band of the color scale it can be seen that there's a general tendency of lower purchase prices in the South of Brazil while higher purchase prices are more existing in the North. The effect is not very pronounced but still visible. A significance test to statistically prove that this difference has sufficient evindence would need to be done in case this will be considered important in the final business case.
 
