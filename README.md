@@ -1,4 +1,4 @@
-# Olist Customer Segmentation .
+# Olist Customer Segmentation 
 ### Analysing of the E-Commerce company Olist dataset
 ![Python](https://www.crossengage.io/wp-content/uploads/2017/10/building-segments-1080x627.png)
 
@@ -12,15 +12,15 @@ For the decision making process in business development in general, and potentia
 
 ## Objectives
 
-The analysis in this repository is looking into the customer's buying behaviour as well as their locations. Three different approaches to segment customers is presented: Customer Segmentation, RFM Analysis and K-Means Clustering. By doing so a few quesions will be answered:
+This analysis is taking a look into the buying behaviour and the location of Olist's customers. Three different approaches to segment customers is presented: customer segmentation, RFM Analysis and K-Means clustering. The following points will be answered:
 
-- Demographic relationship between customers
+- Demographic relationship between Olist's customers
 
-- Geographic relationship in view of customer characteristics
+- Geographic relationship in view of Olist's customer characteristics
 
-- Strategy to target specific customer segments
+- A Strategy to target specific customer segments
 
-- What are the conclusions for the logistic process?
+- And a conclusions derived for the logistic perspective 
 
 ## libraries:
 
@@ -40,10 +40,10 @@ The data is divided in multiple datasets for better understanding and organizati
 
 ![Dataset](https://i.imgur.com/HRhd2Y0.png)
 
-There is also a prepared dataset (df_orders_consolidated.csv) available as an output of the initial Olist E-commerce Data Analysis:
-![Dataset](../pics/Olist-Analysis_1_New_tables.png)
+There is also a prepared dataset (df_orders_consolidated.csv) available as an output of a previous analysis of Olist's business:
+![Dataset](pics/Olist-Analysis_1_New_tables.png)
 
-For the current analysis following data files are used:
+The following data files are used:
 
 - df_orders_consolidated.csv
 - olist_customers_dataset.csv
@@ -51,7 +51,7 @@ For the current analysis following data files are used:
 
 ## Prepare Data
 
-The following steps have been processed in this analysis:
+Steps that have been processed in this analysis:
 
 - Understanding the dataset
 - Checking for missing values 
@@ -62,27 +62,27 @@ The following steps have been processed in this analysis:
 
 ## Exploratory Data Analysis
 
-*Goal*: The focus is on getting an understanding about the customer's buying habits and their locations.
+The main goal is to get an understanding about the buying habits of Olist's customers and their location.
 
-Where are the customers from?
+So, where are the customers from?
 
-Customers live in 4,119 unique cities in 27 unique states.
+Olist's customers live in 4,119 (unique) cities in 27 (unique) states.
 
-![Dataset](../pics/Top_50_cities.png)
+![Dataset](pics/Top_50_cities.png)
 
-![Dataset](../pics/Top_states.png)
+![Dataset](pics/Top_states.png)
 
-The imbalanced distribution accross cities and states need to be kept in mind when drawing conclusions of statistical nature.
+The distribution accross cities and states is imbalanced and need to be kept in mind when drawing conclusions.
 
-![Dataset](../pics/Top_50_zip_codes.png)
+![Dataset](pics/Top_50_zip_codes.png)
 
-There are 14,994 unique zip code prefixes.
+There are 14,994 (unique) zip code prefixes.
 
-*When did customers join?*
+So when did Olist's customers join?
 
-The date of the first order is assumed to be the user sign-up date.
+We assume the sign-up date of a user to be the first time of an order.
 
-![Dataset](../pics/New_customers_daily.png)
+![Dataset](pics/New_customers_daily.png)
 
 Many new cutomers appeared on Black Friday! It is interesting to see that the impact is not very pronounced when looking at the cumulative customer count for the total time span. Overall, the increase of customers has an upward trend. The trendline is slightly exponential, which means that the growth is accelerating slowly.
 
@@ -90,18 +90,18 @@ Many new cutomers appeared on Black Friday! It is interesting to see that the im
 
 ## Demographic relationship between customers
 
-The segmentation will classify customers based on thre metrics:
+The segmentation will classify customers based on the metrics:
 
 - Date since last order was placed (Recency)
 - Total money spent
-- 
+
 The Recency segments are defined by dividing the total time period (oldest order to the newest order) in four periods. In that way we get the following classes:
 
 - Inactive
 - Cold
 - Hot
 - Active
-- 
+
 In a second step the total purchase amount of a customer was sorted to either, higher than the median total purchase amount or lower. Doing so produces two classes:
 
 - Low
@@ -109,13 +109,13 @@ In a second step the total purchase amount of a customer was sorted to either, h
 
 The two classes were combined for each customer to a sub-segment. The disctibution can be made visible in a tree map or waffle chart. The distribution can be reviewed accoring a range of different KPIs.
 
-![Dataset](../pics/Waffle_revenue_subsegment.png)
-![Dataset](../pics/Waffle_orders_subsegment.png)
-![Dataset](../pics/Waffle_customers_subsegment.png)
+![Dataset](pics/Waffle_revenue_subsegment.png)
+![Dataset](pics/Waffle_orders_subsegment.png)
+![Dataset](pics/Waffle_customers_subsegment.png)
 
 ### Conclusion: Demographic relationship between customers
 
-- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the business.
+- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the Olist's business.
 - Active customers with high and low spending placed the most orders, followed by "hot" customers.
 - Active customers are also the biggest groups in terms of head count.
 - Inactive customers represent in each chart the smallest proportion.
@@ -128,14 +128,14 @@ As mentioned above, there is no direct link between the coordinates (logitude, l
 
 Distribution of sub-sebments
 
-![Dataset](../pics/Geo_subsegments.png)
+![Dataset](pics/Geo_subsegments.png)
 
 The bright red dots represent the active-high sub-segment. The color shifts to the cold- and inactive segments in the blue colors. With exception of a few pockets, there's a relatively evenly disctibution of the sub-segments accross the East of Brazil.
 
 Distribution according total revenue
 
-![Dataset](../pics/Geo_totrev_200_1000.png)
-![Dataset](../pics/Geo_totrev_1000_3000_zoom.png)
+![Dataset](pics/Geo_totrev_200_1000.png)
+![Dataset](pics/Geo_totrev_1000_3000_zoom.png)
 
 The chart shows that there is some clustering between higher revenue and lower revenue areas, especially if setting the lower bound threshold higher. In neighborhoods of "Campinas" mostly higher total values while in the suburbs "Vila Amelia", "Brasilandia" and "Limao District" mostly lower values dominate. Rio de Janeiro, especially around the waterfront is mostly red (high revenue), while the north-western suburbs are mainly blue (low revenue).
 
@@ -143,10 +143,10 @@ Even so we can identify areas of higher interest for the business, we need to be
 
 As seen in the EDA section, some zip codes have more customers assigned, so a high total value can be an effect of a big group size, and therefore a higher acumulated revenue. As a refresher, a box chart to display the statistical distribution of the group sizes:
 
-![Dataset](../pics/Zipcode_sizes_boxplot.png)
+![Dataset](pics/Zipcode_sizes_boxplot.png)
 To have the real distribution of the total revenue accross zip codes from another perspective:
 
-![Dataset](../pics/Tot_revenue_dist_zipcode.png)
+![Dataset](pics/Tot_revenue_dist_zipcode.png)
 
 A big majority of neighborhoods is on the low end of the distribution when looking at the summarized revenue. This can have different reasons:
 
@@ -158,13 +158,13 @@ A big majority of neighborhoods is on the low end of the distribution when looki
 
 The following visualization shows the distribution on an individual level, independent from the zize of a neighborhood.
 
-![Dataset](../pics/Geo_avgpurch_50_300.png)
+![Dataset](pics/Geo_avgpurch_50_300.png)
 
 By adjusting the lower- and uppder band of the color scale it can be seen that there's a general tendency of lower purchase prices in the South of Brazil while higher purchase prices are more existing in the North. The effect is not very pronounced but still visible. A significance test to statistically prove that this difference has sufficient evindence would need to be done in case this will be considered important in the final business case.
 
 The general disctribution of individual purchase values averaged accross zip codes
 
-![Dataset](../pics/Avg_purchvalue_dist_zipcode.png)
+![Dataset](pics/Avg_purchvalue_dist_zipcode.png)
 
 Above chart shows the average purchase value distribution, averaged over zip codes. It shows a right-skewed distribution with the majority of the purchase values in the range of 100-120. This seems also to be in line with the general product cost distribution (reference EDA analysis in "Olist Business Trend Analysis").
 
@@ -184,18 +184,18 @@ The RFM analysis is another way to segment customers in order to develop marketi
 ## Recency
 Recency is the time duration from the last order to the reference date (last order date in data set in our case).
 
-![Dataset](../pics/Recency.png)
+![Dataset](pics/Recency.png)
 
 This chart makes sense because we see that there is the spike at round about 270 days before the reference day. That falls in the time period of the heavy Black Friday sales event where a lot of customers placed their latest order.
 
 
-![Dataset](../pics/Frequency.png)
+![Dataset](pics/Frequency.png)
 
 This is in line with what we have seen in the order profile analysis. There are many customers which only placed one order. Monetary
 
 Monetary is basically the cumulated purchase amount a customer as spent.
 
-![Dataset](../pics/Monetary.png)
+![Dataset](pics/Monetary.png)
 
 As also seen in the "Market Trend Analysis", most of the purchases are on the low side (under 100) of the distribution.
 
@@ -212,7 +212,7 @@ In step one of the RFM segment process each of the labels Recency, Frequency and
 - Almost Lost
 - Lost Customer
 
-![Dataset](../pics/Waffle_RFM.png)
+![Dataset](pics/Waffle_RFM.png)
 
 Based on the observed customer behaviour the appropriate marketing strategy added to a summarized list.
 
@@ -241,8 +241,8 @@ K-Means Clustering is a method that supports identifying clusters in unlabeled d
 
 Before the data is processed a scatter plot often helps to identify custering in a visual way already beforehand. The current analysis is dealing with three features which can still be visualized in a 3D scatter plot.
 
-![Dataset](../pics/RFM_scatter_3d.png)
-![Dataset](../pics/RFM_scatter_3d_2.png)
+![Dataset](pics/RFM_scatter_3d.png)
+![Dataset](pics/RFM_scatter_3d_2.png)
 
 The above scatter plot shows a zoomed view in order to get a clearer picture without the outliers. Obviously, the major segmentation factor in this plot is generated by the purchase frequency. Apart from this and the small cluster of very early customers (in the range of 700 days Recency), there is not a clear segmentation to observe.
 
@@ -250,7 +250,7 @@ The SSE (Sum of Squared Errors) in K-Means Clustering is depending on the number
 
 A range of 1 to 10 clusters is used to calculate the resulting SSE.
 
-![Dataset](../pics/Elbow_method.png)
+![Dataset](pics/Elbow_method.png)
 
 The chart shows that a cluster number of 4 is a good choice. When K-Means is applied for 4 clusters we can see where the borders were defined. The summary table and the pie charts below visualize the new clustering.
 
@@ -261,24 +261,24 @@ K-Means |  Cluster |	Recency |	Frequency |	Monetary |	Count |	Customer | Descrip
 2 |	387.2 |	1.0 |	114.1 |	37,566 |	Hibernating Low-Spenders |
 3 |	237.1 |	1.0 |	1142.7 |	2,186 |	Big Spenders |
 
-![Dataset](../pics/K_means_customers.png)
-![Dataset](../pics/K_means_revenue.png)
-![Dataset](../pics/K_means_recency.png)
+![Dataset](pics/K_means_customers.png)
+![Dataset](pics/K_means_revenue.png)
+![Dataset](pics/K_means_recency.png)
 
 The Big Spenders are a small portion of the customers, but the revenue impact is very high. It is essential to make these customers feel valued. Encourage them to stick with their brands. New Low Spenders are the biggest group but show a relatively small revenue. For the growth of the business it is important to spend great effort in these customers in order to turn them into Loyalists or Big Spenders.
 
 The relation of these clusters to each other can be visualized in the 3D scatter plot.
 
-![Dataset](../pics/KMeans_scatter_3d.png)
-![Dataset](../pics/KMeans_scatter_3d_zoom.png)
+![Dataset](pics/KMeans_scatter_3d.png)
+![Dataset](pics/KMeans_scatter_3d_zoom.png)
 
 It now would be interesting to see if there is a geological relationship for these new classes.
 
-![Dataset](../pics/Geo_kmeans_customers.png)
+![Dataset](pics/Geo_kmeans_customers.png)
 
 There is no general tendency to observe when looking at Brazil in total. Taking a closer look at the major cities reveals local clustering.
 
-![Dataset](../pics/Geo_kmeans_zoom.png)
+![Dataset](pics/Geo_kmeans_zoom.png)
 
 The color coding shows that a big portion of Sao Paulo's neighbohoods are Hibernating Low-Spenders. Compared to this, it appears that Rio de Janeiro has more New Low-Spenders. There is no clearly visible concentration of the important segment Big Spenders to see when scanning over Brazil.
 
