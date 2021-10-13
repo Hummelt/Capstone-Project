@@ -307,5 +307,5 @@ As seen in the initial Olist Business Trend Analysis, shipping time is varying a
 
 ## Next steps
 
-The analysis in this part of the project is a reflection of how consumers react to what and how Olist is offering. After seeing the customer behaviour, along with some demographic and geodemographic background, it is now important to also understand which improvements would enhance satisfaction and increase consumer attraction. This is one of the key objectives of the business case analysis and would be the logical next step. The objective can be archived by analyzing data from the customer satisfaction report, and also finding a way to recommend products in an effective way.
+This analysis is part of the Udacity Capstone project and is a reflection of how consumers react to what and how Olist is offering. For a further analysis it would be interesting to understand which improvements would enhance satisfaction to grow consumer attraction. This would be a key objective within the business case analysis of Olist. This could be done by analyzing data from the customer satisfaction data set, to further improve the process of recommendating products in a more effective way.
 
