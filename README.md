@@ -84,7 +84,7 @@ We assume the sign-up date of a user to be the first time of an order.
 
 ![Dataset](pics/New_customers_daily.png)
 
-Many new cutomers appeared on Black Friday! It is interesting to see that the impact is not very pronounced when looking at the cumulative customer count for the total time span. Overall, the increase of customers has an upward trend. The trendline is slightly exponential, which means that the growth is accelerating slowly.
+Many new cutomers appeared on Black Friday ad it is interesting to see that the impact is not very pronounced, when looking at the cumulative customer count for the total time span. Overall, the increase of customers has an inclining trend. The trendline is slightly exponential, which means that the growth is accelerating slowly.
 
 # Customer segmentation
 
@@ -102,12 +102,13 @@ The Recency segments are defined by dividing the total time period (oldest order
 - Hot
 - Active
 
-In a second step the total purchase amount of a customer was sorted to either, higher than the median total purchase amount or lower. Doing so produces two classes:
+The total amount spend of a customer was sorted to either, higher than the median total purchase amount or lower:
 
 - Low
 - High
 
-The two classes were combined for each customer to a sub-segment. The disctibution can be made visible in a tree map or waffle chart. The distribution can be reviewed accoring a range of different KPIs.
+These two classes were combined for each customer to a sub-segment. The disctibution has been visualized in a waffle chart. 
+The distribution can be reviewed accoring a range of different KPIs.
 
 ![Dataset](pics/Waffle_revenue_subsegment.png)
 ![Dataset](pics/Waffle_orders_subsegment.png)
