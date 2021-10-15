@@ -114,12 +114,12 @@ The distribution can be reviewed accoring a range of different KPIs.
 ![Dataset](pics/Waffle_orders_subsegment.png)
 ![Dataset](pics/Waffle_customers_subsegment.png)
 
-### Conclusion: Demographic relationship between customers
+### Conclusion: Demographic relationship between Olist's customers
 
-- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the Olist's business.
-- Active customers with high and low spending placed the most orders, followed by "hot" customers.
+- The strongest class of the sub-segments is active customers with high spending, followed by "hot" customers which are high spending. This is a good result for Olist's business.
+- Active customers with high and low spending placed the highest amount of orders, followed by "hot" customers.
 - Active customers are also the biggest groups in terms of head count.
-- Inactive customers represent in each chart the smallest proportion.
+- Inactive customers represent the smallest proportion in every chart.
 
 # Geodemographic Segmentation
 
