@@ -125,13 +125,15 @@ The distribution can be reviewed accoring a range of different KPIs.
 
 ### Geographic relationship in view of customer characteristics
 
-As mentioned above, there is no direct link between the coordinates (logitude, latitude) and the customer, because the zip code prefix is not uniquely assigned to one specific coordinate, but a range which fall into the same neighborhood. In this way many customers fall onto the same coordinate. To deal with this, for each coordinate the majority class was calculated. In that way the unique zip code prefix is shown on the map with the color of the majority segment.
+As mentioned, there isn't a direct link between the coordinates and the customer, because the zip code prefix is not uniquely assigned to one specific coordinate but a range which fall into the same neighborhood. In this way many customers fall into the same coordinate. Therefore the majority class was calculated for each coordinate. This is how the unique zip code prefix is shown on the map with the color of the majority segment.
 
-Distribution of sub-sebments
+Distribution of sub-segments
 
 ![Dataset](pics/Geo_subsegments.png)
 
-The bright red dots represent the active-high sub-segment. The color shifts to the cold- and inactive segments in the blue colors. With exception of a few pockets, there's a relatively evenly disctibution of the sub-segments accross the East of Brazil.
+Bright red dots = active-high sub-segment.  
+Color shift to blue colors = cold- and inactive segments. 
+With exception of a few, there's a relatively equally disctibution of the sub-segments accross the East of Brazil.
 
 Distribution according total revenue
 
