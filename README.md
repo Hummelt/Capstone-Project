@@ -84,7 +84,7 @@ We assume the sign-up date of a user to be the first time of an order.
 
 ![Dataset](pics/New_customers_daily.png)
 
-Many new cutomers appeared on Black Friday! It is interesting to see that the impact is not very pronounced when looking at the cumulative customer count for the total time span. Overall, the increase of customers has an upward trend. The trendline is slightly exponential, which means that the growth is accelerating slowly.
+Many new cutomers appeared on Black Friday ad it is interesting to see that the impact is not very pronounced, when looking at the cumulative customer count for the total time span. Overall, the increase of customers has an inclining trend. The trendline is slightly exponential, which means that the growth is accelerating slowly.
 
 # Customer segmentation
 
@@ -102,35 +102,38 @@ The Recency segments are defined by dividing the total time period (oldest order
 - Hot
 - Active
 
-In a second step the total purchase amount of a customer was sorted to either, higher than the median total purchase amount or lower. Doing so produces two classes:
+The total amount spend of a customer was sorted to either, higher than the median total purchase amount or lower:
 
 - Low
 - High
 
-The two classes were combined for each customer to a sub-segment. The disctibution can be made visible in a tree map or waffle chart. The distribution can be reviewed accoring a range of different KPIs.
+These two classes were combined for each customer to a sub-segment. The disctibution has been visualized in a waffle chart. 
+The distribution can be reviewed accoring a range of different KPIs.
 
 ![Dataset](pics/Waffle_revenue_subsegment.png)
 ![Dataset](pics/Waffle_orders_subsegment.png)
 ![Dataset](pics/Waffle_customers_subsegment.png)
 
-### Conclusion: Demographic relationship between customers
+### Conclusion: Demographic relationship between Olist's customers
 
-- The strongest class of the 7 generated sub-segments is active customers with high spending, followed by "hot" customers which high spending, which is a good sign for the Olist's business.
-- Active customers with high and low spending placed the most orders, followed by "hot" customers.
+- The strongest class of the sub-segments is active customers with high spending, followed by "hot" customers which are high spending. This is a good result for Olist's business.
+- Active customers with high and low spending placed the highest amount of orders, followed by "hot" customers.
 - Active customers are also the biggest groups in terms of head count.
-- Inactive customers represent in each chart the smallest proportion.
+- Inactive customers represent the smallest proportion in every chart.
 
 # Geodemographic Segmentation
 
 ### Geographic relationship in view of customer characteristics
 
-As mentioned above, there is no direct link between the coordinates (logitude, latitude) and the customer, because the zip code prefix is not uniquely assigned to one specific coordinate, but a range which fall into the same neighborhood. In this way many customers fall onto the same coordinate. To deal with this, for each coordinate the majority class was calculated. In that way the unique zip code prefix is shown on the map with the color of the majority segment.
+As mentioned, there isn't a direct link between the coordinates and the customer, because the zip code prefix is not uniquely assigned to one specific coordinate but a range which fall into the same neighborhood. In this way many customers fall into the same coordinate. Therefore the majority class was calculated for each coordinate. This is how the unique zip code prefix is shown on the map with the color of the majority segment.
 
-Distribution of sub-sebments
+Distribution of sub-segments
 
 ![Dataset](pics/Geo_subsegments.png)
 
-The bright red dots represent the active-high sub-segment. The color shifts to the cold- and inactive segments in the blue colors. With exception of a few pockets, there's a relatively evenly disctibution of the sub-segments accross the East of Brazil.
+Bright red dots = active-high sub-segment.  
+Color shift to blue colors = cold- and inactive segments. 
+With exception of a few, there's a relatively equally disctibution of the sub-segments accross the East of Brazil.
 
 Distribution according total revenue
 
