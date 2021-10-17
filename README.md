@@ -171,6 +171,10 @@ The general disctribution of individual purchase values averaged accross zip cod
 
 Above chart shows the average purchase value distribution, averaged over zip codes. It shows a right-skewed distribution with the majority of the purchase values in the range of 100-120. This seems also to be in line with the general product cost distribution (reference EDA analysis in "Olist Business Trend Analysis").
 
+![Dataset](pics/recency_first_last_order.png)
+
+In general most of the orders were placed in the range of 200-250 days before "day 0".
+
 ## Conclusion: Geographic relationship in view of customer characteristics
 
 - There is not a clear correlation between location and customer sub-segment.
