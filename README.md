@@ -198,9 +198,9 @@ This chart makes sense because we see that there is the spike at round about 270
 
 ![Dataset](pics/Frequency.png)
 
-This is in line with what we have seen in the order profile analysis. There are many customers which only placed one order. Monetary
+There are many customers which only placed one order. 
 
-Monetary is basically the cumulated purchase amount a customer as spent.
+Monetary is basically the cumulated purchase amount a customer has spent.
 
 ![Dataset](pics/Monetary.png)
 
