@@ -1,6 +1,6 @@
 # Olist Customer Segmentation 
 ### Analysing of the E-Commerce company Olist dataset
-![Python](https://www.crossengage.io/wp-content/uploads/2017/10/building-segments-1080x627.png)
+![Pic](https://www.crossengage.io/wp-content/uploads/2017/10/building-segments-1080x627.png)
 
 ## Business Understanding of Olist E-Commerce
 This dataset was generously provided by Olist, the largest department store in Brazilian marketplaces. Olist connects small businesses from all over Brazil to channels without hassle and with a single contract. Those merchants are able to sell their products through the Olist Store and ship them directly to the customers using Olist logistics partners. See more on Olist's website: www.olist.com
@@ -173,14 +173,14 @@ Above chart shows the average purchase value distribution, averaged over zip cod
 
 ![Dataset](pics/recency_first_last_order.png)
 
-In general most of the orders were placed in the range of 200-250 days before "day 0".
+In general most of the orders were placed in the range of 200-250 days after "day 0".
 
 ## Conclusion: Geographic relationship in view of customer characteristics
 
-- There is not a clear correlation between location and customer sub-segment.
-- Along the cost line of Rio de Janeiro are the biggest communities, which also falls in line with areas of high revenue. On the other hand, Sao Paulo has, by a big margin, the biggest overall customer count. This is an important conclusion for logistics and supply chain.
-- Some level of clustering in view of higher- and lower total reveny can be seen. This might for a big part be the effect of the group sizes. Geographical clusters of high revenue are "Campinas" and the south east of Rio de Janeiro.
-- There seem to be a slightly higher general purchase price in the north of Brazil when looking at the level of individual customers. A statistical test to validate this statement would need to be performed before basing any decisions on this.
+- No clear correlation between location and customer sub-segment
+- The biggest communities along the cost line of Rio de Janeiro are areas of high revenue. Sao Paulo has the biggest overall customer count. This is an important fact for logistics and supply chain solutions.
+- Some level of clustering in respect to higher- and lower total revenue can be seen. This might have a big portion on the effect of the group sizes. Geographical clusters of high revenue are "Campinas" and the south east of Rio.
+- Slightly higher general price of purchase in the north of Brazil on an individual customer level. Before coming to any conclusions here this needs to be statistically tested.
 
 # Part II
 
@@ -198,9 +198,9 @@ This chart makes sense because we see that there is the spike at round about 270
 
 ![Dataset](pics/Frequency.png)
 
-This is in line with what we have seen in the order profile analysis. There are many customers which only placed one order. Monetary
+There are many customers which only placed one order. 
 
-Monetary is basically the cumulated purchase amount a customer as spent.
+Monetary is basically the cumulated purchase amount a customer has spent.
 
 ![Dataset](pics/Monetary.png)
 
