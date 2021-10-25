@@ -295,7 +295,7 @@ The color coding visualizes that a big portion of Sao Paulo's neighbourhoods are
 
 ## Demographic relationship between customers
 
-The shared message between the different segmentation methods is that there is a small group of high spending customers that is essential to maintain as it is representing a significant portion of the revenue, and a relatively large group of customers which have the potential to impact Olist's future business. A very small segment can be called "Loyalists" based on multiple orders placed.
+The common results between the segmentation methods is a small group of High Spenders which is the key group of customers to maintain as they are representing a significant portion of the revenue and a relatively large group of customers which have the potential to impact Olist's future business. A very small segment can be called "Loyalists" based on multiple orders placed.
 
 Order frequency in this order dataset is in general low with a high concentration in just above one order placed. Based on this, the definition of "inactive" is a very sensitive metric which can swing quickly based on where thresholds are set. The customer segmentation and the RMF in the initial part of the analysis did not work with normalized data and show a smaller portion of "inactive", "hibernating" and "lost" customers. K-Menas Clustering worked with normalized data and came up with only 4 customer clusters, in which "Hibernating Low-Spenders" are 40% of all customers.
 
