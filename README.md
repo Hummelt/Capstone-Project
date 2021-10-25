@@ -242,11 +242,11 @@ Lost Customer	| 11,574 |	367.6 |	1.0 |	29.0 |	Do not spent much effort and money
 
 # K-Means Clustering
 
-##Evaluation of the RFM segmentation by comparison with ML clustering method
+## Evaluation of the RFM segmentation by comparison with ML clustering method
 
 K-Means Clustering is a method that identifies clusters within unlabeled data. Sklearns K-means algorithm has been applied to find underlying segments which are different from the randomly chosen RFM classes. This will provide a different perspective and confidence level on the RFM segmentation.
 
-A scatter plot often helps to identify custering visually before processing the data. The current analysis is dealing with three features which can already be visualized in a 3D scatter plot.
+A scatter plot often helps to identify clustering visually before processing the data. The current analysis is dealing with three features which can already be visualized in a 3D scatter plot.
 
 ![Dataset](pics/RFM_scatter_3d.png)
 ![Dataset](pics/RFM_scatter_3d_2.png)
